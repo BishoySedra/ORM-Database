@@ -1,15 +1,21 @@
+import dotenv from "dotenv";
 import { Sequelize } from "sequelize";
 
-export const sequelize = new Sequelize('task_3', 'root', 'Bishoy@123', {
-    host: 'localhost',
-    dialect: 'mysql'
-});
+dotenv.config();
 
-export async function connectionDB() {
+export const sequelize = new Sequelize(
+    process.env.DATABASE_NAME,
+    process.env.DATABASE_USERNAME,
+    process.env.DATABASE_PASSWORD,
+    {
+        host: process.env.DATABASE_HOST,
+        dialect: 'mysql'
+    });
+
+export async function connectDB() {
     try {
-        // const result = await sequelize.sync({ alter: true });
-        console.log('DataBase Connected!');
+        // const connectedDataBase = await sequelize.sync();
     } catch (error) {
-        console.log(error);
+        console.log("Failed connecting to database", { message: error });
     }
 }

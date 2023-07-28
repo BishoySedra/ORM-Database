@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../connection.js";
 
 const user = sequelize.define('user', {
-    username: {
+    user_name: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -15,14 +15,14 @@ const user = sequelize.define('user', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    phoneNumber: {
+    phone_number: {
         type: DataTypes.STRING,
+        allowNull: false,
         unique: true
     },
     forgetPasswordCode: {
         type: DataTypes.STRING,
-        defaultValue: null,
-        allowNull: true
+        defaultValue: null
     },
     forgetPasswordCodeVerified: {
         type: DataTypes.BOOLEAN,

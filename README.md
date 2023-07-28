@@ -8,4 +8,4 @@ To create the required tables in the database, we utilize `sequelize.js` models.
 
 ## API Documentation
 
-For a detailed understanding of the available requests and endpoints in this Node.js application, please refer to our [API Documentation](https://documenter.getpostman.com/view/28416524/2s9XxsWc4K).
+For a detailed understanding of the available requests and endpoints in this Node.js application, please refer to the [Documentation](https://documenter.getpostman.com/view/28416524/2s9XxsWc4K).

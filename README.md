@@ -4,7 +4,7 @@ This repository contains a Node.js application that demonstrates the concept of 
 
 ## Database Tables
 
-To create the required tables in the database, we utilize `sequelize.js` models. You can find these models inside the `DB` folder within the `models` directory. Before running the application, ensure that you fill in the necessary credentials in the `.env.example` file to ensure smooth execution.
+To create the required tables in the database, I utilize `sequelize.js` models. You can find these models inside the `DB` folder within the `models` directory. Before running the application, ensure that you fill in the necessary credentials in the `.env.example` file to ensure smooth execution.
 
 ## API Documentation
 
